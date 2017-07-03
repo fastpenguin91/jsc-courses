@@ -1,0 +1,95 @@
+.jsc-title {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.jsc-fullwidth-container {
+    margin: 25px;
+    padding: 25px;
+}
+
+.jsc-section-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+
+.challenge-pagination span {
+    display: inline-block;
+    background: #e3e6ea;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.challenge-pagination {
+    text-align: center;
+}
+
+.btn-main {
+    display: inline-block;
+    background: #e3e6ea;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 25px;
+}
+
+.user-message {
+    background: #d6db3f;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+
+.jsc-section-content {
+    padding-top: 15px;
+}
+
+#formArea {
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+#submit_button {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#reset_button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background: lightblue;
+    border-radius: 10px;
+}
+
+#formArea input[type=button] {
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.challengeIsSolved {
+    display: inline-block;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    background: lightgreen;
+    border-radius: 10px;
+}
+
+.code_challenge_list_item {
+    background: #e3e6ea;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+a.challenge-link {
+    color: blue;
+    text-decoration: underline;
+}
