@@ -11,7 +11,16 @@ class Jsc_Courses_Admin {
 	public function __construct(){
 	}
 
-	function create_lesson(){
+	public function add_menu(){
+		add_menu_page(
+			'JSC Courses',
+			'JSC Courses',
+			'read',
+			'jsc-courses/admin/templates/courses-admin.php'
+		);
+	}
+
+	public function create_lesson(){
 		$labels = array(
 			'name'          => 'Lessons',
 			'singular_name' => 'Lesson',
