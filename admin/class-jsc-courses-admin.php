@@ -44,7 +44,9 @@ class Jsc_Courses_Admin {
 	}
 
 	public function enqueue_styles(){
-
+		//die(var_dump(plugins_url() . '/jsc-courses/admin/css' ) );
+		wp_register_style('custom-courses-admin-css', plugin_dir_url( __FILE__ ) . '/css/jsc-courses-admin.css');
+		wp_enqueue_style('custom-courses-admin-css');
 	}
 
 	public function enqueue_scripts() {

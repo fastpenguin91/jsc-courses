@@ -16,6 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 register_activation_hook( __FILE__, 'activate_jsc_courses' );
 
+
 /**
  * Runs all necessary setup code for plugin
  */
@@ -30,6 +31,9 @@ function activate_jsc_courses(){
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-jsc-courses.php';
+
+// TODO: Figure out a better place to put the shortcode activation
+require plugin_dir_path( __FILE__ ) . 'includes/class-jsc-courses-shortcodes.php';
 
 function run_jsc_courses(){
 	$plugin = new Jsc_Courses();

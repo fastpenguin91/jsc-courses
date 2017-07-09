@@ -36,8 +36,8 @@ class Jsc_Courses {
 
 
 		$this->load_dependencies();
-		$this->define_public_hooks();
 		$this->define_admin_hooks();
+		$this->define_public_hooks();
 
 	}
 
@@ -80,13 +80,12 @@ class Jsc_Courses {
 	 * @access   private
 	 */
 	private function define_admin_hooks() {
+		$jsc_courses_admin = new Jsc_Courses_Admin( $this->get_plugin_name(), $this->get_version() );
 
-		$plugin_admin = new Jsc_Courses_Admin( $this->get_plugin_name(), $this->get_version() );
-
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-		$this->loader->add_action( 'init', $plugin_admin, 'create_lesson' );
-		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_menu' );
+		$this->loader->add_action( 'admin_enqueue_scripts', $jsc_courses_admin, 'enqueue_styles' );
+		$this->loader->add_action( 'admin_enqueue_scripts', $jsc_courses_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'init', $jsc_courses_admin, 'create_lesson' );
+		$this->loader->add_action( 'admin_menu', $jsc_courses_admin, 'add_menu' );
 	}
 
 	public function get_plugin_name(){
