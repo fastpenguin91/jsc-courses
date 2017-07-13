@@ -52,4 +52,22 @@ class Jsc_Courses_Admin {
 	public function enqueue_scripts() {
 
 	}
+
+	public function jsc_create_section() {
+		global $wpdb;
+		$title_name = sanitize_text_field( $_POST['section_title'] );
+
+		$data = array(
+			'title' => $title_name
+		);
+
+		$table = $wpdb->prefix . 'jsc_courses_sections';
+
+		$wpdb->insert( $table, $data );
+
+		wp_redirect( admin_url() );
+		exit;
+
+		//die('yeaaaaah died in the create section function');
+	}
 }

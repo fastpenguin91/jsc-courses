@@ -82,6 +82,7 @@ class Jsc_Courses {
 	private function define_admin_hooks() {
 		$jsc_courses_admin = new Jsc_Courses_Admin( $this->get_plugin_name(), $this->get_version() );
 
+		$this->loader->add_action( 'admin_post_test_custom_post', $jsc_courses_admin, 'jsc_create_section' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $jsc_courses_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $jsc_courses_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'init', $jsc_courses_admin, 'create_lesson' );

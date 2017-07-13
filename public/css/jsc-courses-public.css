@@ -1,3 +1,16 @@
+.jsc-course-section {
+    padding: 30px;
+    background: lightblue;
+    border-radius: 15px;
+}
+
+.challenge_list_item {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    background: yellow;
+}
+
 .jsc-title {
     text-align: center;
     padding-top: 25px;
