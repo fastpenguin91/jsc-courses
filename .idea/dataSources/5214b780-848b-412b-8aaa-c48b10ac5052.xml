@@ -169,7 +169,7 @@ comment_date_gmt</ColNames>
       <ColNames>comment_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="54" parent="13" name="id">
+    <column id="54" parent="13" name="section_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
@@ -182,7 +182,7 @@ comment_date_gmt</ColNames>
     </column>
     <key id="56" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>section_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="57" parent="14" name="sections_id">
