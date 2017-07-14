@@ -44,8 +44,9 @@ $count_lessons = count($section_lessons);
 
 //echo "<input type='hidden' name='section_id' value='" . $section_lessons[0]->section_id . "'";
 for ($i = 0; $i < $count_lessons; $i++) {
-    echo "<div class='admin-lesson'><strong>" . $section_lessons[$i]->post_title . "</strong>";
+    echo "<div ondragleave='dragleave_handler(event);' ondrop='drop_handler(event);' ondragover='dragover_handler(event);' id='" . $section_lessons[$i]->ID . "' draggable='true' ondragstart='dragstart_handler(event);' class='admin-lesson'><strong>" . $section_lessons[$i]->post_title . "</strong>";
     echo "<input type='number' name='post_" . $section_lessons[$i]->ID ."' value='". $section_lessons[$i]->position . "' ></div>";
+	//echo '<div class="dropzone" id="target" ondragleave="dragleave_handler(event);" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>';
 }
 ?>
 

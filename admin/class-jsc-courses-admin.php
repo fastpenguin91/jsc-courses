@@ -50,7 +50,8 @@ class Jsc_Courses_Admin {
 	}
 
 	public function enqueue_scripts() {
-
+		wp_enqueue_script( 'jsc-courses-sections-handle', plugin_dir_url( __FILE__ ) . 'js/dragndrop.js', array( 'jquery' ) );
+		wp_localize_script( 'jsc-courses-sections-handle', 'dragDropData', array() );
 	}
 
 	public function jsc_create_section() {
