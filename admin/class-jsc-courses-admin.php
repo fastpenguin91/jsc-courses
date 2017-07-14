@@ -71,4 +71,8 @@ class Jsc_Courses_Admin {
 
 		//die('yeaaaaah died in the create section function');
 	}
+
+	public function jsc_update_position(){
+		die(var_dump($_POST) );
+	}
 }

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e83161b4-e0f9-4589-b74c-320bc87281ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/dragndrop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" afterPath="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/jsc-courses-admin.css" afterPath="$PROJECT_DIR$/admin/css/jsc-courses-admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/dragndrop.js" afterPath="$PROJECT_DIR$/admin/js/dragndrop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/templates/courses-admin.php" afterPath="$PROJECT_DIR$/admin/templates/courses-admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-jsc-courses.php" afterPath="$PROJECT_DIR$/includes/class-jsc-courses.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,25 +69,46 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="courses-admin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="courses-admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/templates/courses-admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="46" column="122" lean-forward="false" selection-start-line="46" selection-start-column="122" selection-end-line="46" selection-end-column="122" />
+            <state relative-caret-position="360">
+              <caret line="57" column="116" lean-forward="false" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
               <folding>
-                <marker date="1499987158000" expanded="true" signature="591:957" ph="SELECT wp_po... wp_posts" />
-                <marker date="1499987158000" expanded="true" signature="591:966" ph="SELECT wp_po... wp_posts" />
-                <marker date="1499987158000" expanded="true" signature="591:1059" ph="SELECT wp_po... wp_posts" />
+                <marker date="1500045632000" expanded="true" signature="591:957" ph="SELECT wp_po... wp_posts" />
+                <marker date="1500045632000" expanded="true" signature="591:966" ph="SELECT wp_po... wp_posts" />
+                <marker date="1500045632000" expanded="true" signature="591:1059" ph="SELECT wp_po... wp_posts" />
+                <marker date="1500045632000" expanded="true" signature="2059:2400" ph="SELECT wp_po... wp_posts" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dragndrop.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="class-jsc-courses.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="84" column="116" lean-forward="false" selection-start-line="84" selection-start-column="116" selection-end-line="84" selection-end-column="116" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class-jsc-courses-admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/class-jsc-courses-admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="75" column="31" lean-forward="false" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dragndrop.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/js/dragndrop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            <state relative-caret-position="402">
+              <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -169,12 +190,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5214b780-848b-412b-8aaa-c48b10ac5052/console.sql" />
         <option value="$PROJECT_DIR$/public/css/jsc-courses-public.css" />
         <option value="$PROJECT_DIR$/includes/class-jsc-courses-shortcodes.php" />
-        <option value="$PROJECT_DIR$/includes/class-jsc-courses.php" />
         <option value="$PROJECT_DIR$/admin/jsc-courses-form-action.php" />
-        <option value="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" />
         <option value="$PROJECT_DIR$/admin/css/jsc-courses-admin.css" />
-        <option value="$PROJECT_DIR$/admin/templates/courses-admin.php" />
         <option value="$PROJECT_DIR$/admin/js/dragndrop.js" />
+        <option value="$PROJECT_DIR$/includes/class-jsc-courses.php" />
+        <option value="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" />
+        <option value="$PROJECT_DIR$/admin/templates/courses-admin.php" />
       </list>
     </option>
   </component>
@@ -489,12 +510,12 @@
       <workItem from="1499549458872" duration="1322000" />
       <workItem from="1499561119325" duration="10506000" />
       <workItem from="1499883946397" duration="18111000" />
-      <workItem from="1499980329737" duration="5798000" />
+      <workItem from="1499980329737" duration="9807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72818000" />
+    <option name="totallyTimeSpent" value="76827000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -728,22 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class-jsc-courses-admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="53" column="81" lean-forward="false" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/css/jsc-courses-admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -752,23 +757,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/templates/courses-admin.php">
+    <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="46" column="122" lean-forward="false" selection-start-line="46" selection-start-column="122" selection-end-line="46" selection-end-column="122" />
-          <folding>
-            <marker date="1499987158000" expanded="true" signature="591:957" ph="SELECT wp_po... wp_posts" />
-            <marker date="1499987158000" expanded="true" signature="591:966" ph="SELECT wp_po... wp_posts" />
-            <marker date="1499987158000" expanded="true" signature="591:1059" ph="SELECT wp_po... wp_posts" />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="84" column="116" lean-forward="false" selection-start-line="84" selection-start-column="116" selection-end-line="84" selection-end-column="116" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/js/dragndrop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+        <state relative-caret-position="402">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-jsc-courses-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="75" column="31" lean-forward="false" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/courses-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="57" column="116" lean-forward="false" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
+          <folding>
+            <marker date="1500045632000" expanded="true" signature="591:957" ph="SELECT wp_po... wp_posts" />
+            <marker date="1500045632000" expanded="true" signature="591:966" ph="SELECT wp_po... wp_posts" />
+            <marker date="1500045632000" expanded="true" signature="591:1059" ph="SELECT wp_po... wp_posts" />
+            <marker date="1500045632000" expanded="true" signature="2059:2400" ph="SELECT wp_po... wp_posts" />
+          </folding>
         </state>
       </provider>
     </entry>

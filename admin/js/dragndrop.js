@@ -6,7 +6,7 @@ function dragstart_handler(ev){
     console.log(ev.target.id);
     //console.log(ev);
     // Change the source element's background color to signify drag has started
-    ev.currentTarget.style.border = "dashed";
+    //ev.currentTarget.style.border = "dashed";
     ev.dataTransfer.setData("text", ev.target.id);
     var data = ev.dataTransfer.getData("text");
     console.log("The data is: " + data);
@@ -36,6 +36,13 @@ function drop_handler(ev) {
     var data = ev.dataTransfer.getData("text");
     console.log(document.getElementById(data));
     parentDiv.insertBefore(document.getElementById(data), baseElement);
+    set_position();
 }
 
-console.log("still in JS yo");
+function set_position() {
+    var lessons = document.getElementsByClassName('lesson_position');
+    for (i = 0; i < lessons.length; i++) {
+        lessons[i].value = i + 1;
+        console.log(lessons[i]);
+    }
+}
