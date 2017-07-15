@@ -3,8 +3,6 @@
  */
 
 function dragstart_handler(ev){
-    console.log(ev.target.id);
-    //console.log(ev);
     // Change the source element's background color to signify drag has started
     //ev.currentTarget.style.border = "dashed";
     ev.dataTransfer.setData("text", ev.target.id);

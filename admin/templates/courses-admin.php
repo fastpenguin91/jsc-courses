@@ -25,7 +25,7 @@
 <?php
 global $wpdb;
 
-$section_lessons = $wpdb->get_results("SELECT wp_posts.ID, wp_posts.post_title, wp_jsc_courses_sections.section_id, wp_jsc_courses_sections_lessons.position
+$section_lessons = $wpdb->get_results("SELECT wp_posts.ID, wp_posts.post_title, wp_jsc_courses_sections.section_id, wp_jsc_courses_sections_lessons.position, wp_jsc_courses_sections_lessons.sl_id
 FROM wp_posts
 INNER JOIN wp_jsc_courses_sections_lessons ON wp_posts.ID=wp_jsc_courses_sections_lessons.lessons_id
 INNER JOIN wp_jsc_courses_sections ON wp_jsc_courses_sections_lessons.sections_id=wp_jsc_courses_sections.section_id
@@ -41,7 +41,10 @@ $count_lessons = count($section_lessons);
 <?php
 for ($i = 0; $i < $count_lessons; $i++) {
     echo "<div ondragleave='dragleave_handler(event);' ondrop='drop_handler(event);' ondragover='dragover_handler(event);' id='" . $section_lessons[$i]->ID . "' draggable='true' ondragstart='dragstart_handler(event);' class='admin-lesson'><strong>" . $section_lessons[$i]->post_title . "</strong>";
-    echo "<input class='lesson_position' type='number' name='post_" . $section_lessons[$i]->ID ."' value='". $section_lessons[$i]->position . "' ></div>";
+    echo "<input class='lesson_position' type='number' name='lesson_positions[]' value='". $section_lessons[$i]->position . "' >";
+	echo 'post_id: ' . $section_lessons[$i]->ID . ' sl_id: ' . $section_lessons[$i]->sl_id . "<input type='hidden' name='post_ids[]' value='". $section_lessons[$i]->ID ."'>";
+    echo "<input type='hidden' name='sl_ids[]' value='". $section_lessons[$i]->sl_id . "'>";
+    echo "<input type='hidden' name='section_ids[]' value='1'></div>";
 	//echo '<div class="dropzone" id="target" ondragleave="dragleave_handler(event);" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>';
 }
 ?>
@@ -62,7 +65,10 @@ $all_lessons_count = count($all_lessons);
 
 for ($i = 0; $i < $all_lessons_count; $i++) {
 	echo "<div ondragleave='dragleave_handler(event);' ondrop='drop_handler(event);' ondragover='dragover_handler(event);' id='" . $all_lessons[$i]->ID . "' draggable='true' ondragstart='dragstart_handler(event);' class='admin-lesson'><strong>" . $all_lessons[$i]->post_title . "</strong>";
-	echo "<input class='lesson_position' type='number' name='post_" . $all_lessons[$i]->ID ."' value='". $all_lessons[$i]->position . "' ></div>";
+	echo "<input class='lesson_position' type='number' name='lesson_positions[]' value='". $all_lessons[$i]->position . "' >";
+	echo 'post_id: ' . $all_lessons[$i]->ID . ' sl_id: ' . $all_lessons[$i]->sl_id . "<input type='hidden' name='post_ids[]' value='". $all_lessons[$i]->ID ."'>";
+	echo "<input type='hidden' name='sl_ids[]' value='". NULL . "'>";
+	echo "<input type='hidden' name='section_ids[]' value='1'></div>";
 	//echo '<div class="dropzone" id="target" ondragleave="dragleave_handler(event);" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>';
 
 }
