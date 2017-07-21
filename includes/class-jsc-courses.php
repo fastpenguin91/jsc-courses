@@ -56,6 +56,8 @@ class Jsc_Courses {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-jsc-courses-admin.php';
 
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-jsc-courses-shortcodes.php';
+
 		$this->loader = new Jsc_Courses_Loader();
 	}
 
@@ -88,6 +90,12 @@ class Jsc_Courses {
 		$this->loader->add_action( 'admin_enqueue_scripts', $jsc_courses_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'init', $jsc_courses_admin, 'create_lesson' );
 		$this->loader->add_action( 'admin_menu', $jsc_courses_admin, 'add_menu' );
+		$this->loader->add_action( 'wp_ajax_my_action', $jsc_courses_admin, 'my_action');
+		//add_action( 'wp_ajax_my_action', 'my_action' );
+
+		$courses_shortcodes = new Jsc_Courses_Shortcodes();
+
+		$this->loader->add_action('init', $courses_shortcodes, 'register_shortcodes' );
 	}
 
 	public function get_plugin_name(){

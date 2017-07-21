@@ -43,4 +43,23 @@ class Jsc_Courses_Dba {
 		dbDelta( $sql );
 		add_option( 'cc_jsc_db_version', $cc_jsc_courses_db_version );
 	}
+
+	public function prepare_shortcode_results($section_id){
+		global $wpdb;
+
+		$section_id = intval($section_id);
+
+		//Get section and print it to the location of the shortcode
+		$sql_string = 'SELECT wp_jsc_courses_sections.title, wp_posts.ID, wp_posts.post_title
+			FROM wp_posts
+			INNER JOIN wp_jsc_courses_sections_lessons ON wp_posts.ID=wp_jsc_courses_sections_lessons.lessons_id
+			INNER JOIN wp_jsc_courses_sections ON wp_jsc_courses_sections_lessons.sections_id = wp_jsc_courses_sections.section_id
+			WHERE post_type = \'lessons\' AND wp_jsc_courses_sections.section_id =' . $section_id . '
+			ORDER BY wp_jsc_courses_sections_lessons.position;';
+
+		return $wpdb->get_results( $sql_string );
+
+	}
+
+
 }

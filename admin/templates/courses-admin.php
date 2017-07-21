@@ -8,45 +8,33 @@
 
 ?>
 
-<h1>Create a Section Shortcode</h1> (Then You can add lessons)<br>
+<h1>Create a NEW Section Shortcode</h1> <br>
+
+<?php require_once plugin_dir_path( dirname( __FILE__ ) ) . 'class-jsc-courses-admin.php'; ?>
 
 
+    <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+        <h3>Section Title:</h3> <br>
+        <input type="text" name="section_title"> <br>
+        <input type="hidden" name="action" value="test_custom_post">
+        <input type="submit" value="submit">
+    </form>
 
-<form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
-    Section Title: <br>
-    <input type="text" name="section_title"> <br>
-    <strong>Section Lessons:</strong> <br>
-    <input type="hidden" name="action" value="test_custom_post">
-    <input type="submit" value="submit">
-</form>
+    <h3>Select a Lesson to Edit:</h3>
 
-<h1>You are editing the PHP Basics Section</h1>
+<?php echo Jsc_Courses_Admin::display_all_sections(); ?>
 
-<?php
-global $wpdb;
+    <h1>You are editing the PHP Basics Section</h1>
+    <h3>Section Lessons:</h3> <br>
 
-$section_lessons = $wpdb->get_results("SELECT wp_posts.ID, wp_posts.post_title, wp_jsc_courses_sections.section_id, wp_jsc_courses_sections_lessons.position, wp_jsc_courses_sections_lessons.sl_id
-FROM wp_posts
-INNER JOIN wp_jsc_courses_sections_lessons ON wp_posts.ID=wp_jsc_courses_sections_lessons.lessons_id
-INNER JOIN wp_jsc_courses_sections ON wp_jsc_courses_sections_lessons.sections_id=wp_jsc_courses_sections.section_id
-WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 1
-ORDER BY wp_jsc_courses_sections_lessons.position");
 
-$count_lessons = count($section_lessons);
-
-?>
 <form action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post" id="sectionForm">
 <input type='hidden' name='action' value='update_lesson_position'>
 <input type="submit" value="submit">
 <?php
-for ($i = 0; $i < $count_lessons; $i++) {
-    echo "<div ondragleave='dragleave_handler(event);' ondrop='drop_handler(event);' ondragover='dragover_handler(event);' id='" . $section_lessons[$i]->ID . "' draggable='true' ondragstart='dragstart_handler(event);' class='admin-lesson'><strong>" . $section_lessons[$i]->post_title . "</strong>";
-    echo "<input class='lesson_position' type='number' name='lesson_positions[]' value='". $section_lessons[$i]->position . "' >";
-	echo 'post_id: ' . $section_lessons[$i]->ID . ' sl_id: ' . $section_lessons[$i]->sl_id . "<input type='hidden' name='post_ids[]' value='". $section_lessons[$i]->ID ."'>";
-    echo "<input type='hidden' name='sl_ids[]' value='". $section_lessons[$i]->sl_id . "'>";
-    echo "<input type='hidden' name='section_ids[]' value='1'></div>";
-	//echo '<div class="dropzone" id="target" ondragleave="dragleave_handler(event);" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>';
-}
+
+echo Jsc_Courses_Admin::add_position_fields();
+
 ?>
 
 </form>
@@ -55,23 +43,4 @@ for ($i = 0; $i < $count_lessons; $i++) {
 
 <?php
 
-$all_lessons = $wpdb->get_results("SELECT wp_posts.ID, wp_posts.post_title
-FROM wp_posts 
-INNER JOIN wp_jsc_courses_sections_lessons ON wp_posts.ID=wp_jsc_courses_sections_lessons.lessons_id
-INNER JOIN wp_jsc_courses_sections ON wp_jsc_courses_sections_lessons.sections_id=wp_jsc_courses_sections.section_id
-WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 2");
-
-$all_lessons_count = count($all_lessons);
-
-for ($i = 0; $i < $all_lessons_count; $i++) {
-	echo "<div ondragleave='dragleave_handler(event);' ondrop='drop_handler(event);' ondragover='dragover_handler(event);' id='" . $all_lessons[$i]->ID . "' draggable='true' ondragstart='dragstart_handler(event);' class='admin-lesson'><strong>" . $all_lessons[$i]->post_title . "</strong>";
-	echo "<input class='lesson_position' type='number' name='lesson_positions[]' value='". $all_lessons[$i]->position . "' >";
-	echo 'post_id: ' . $all_lessons[$i]->ID . ' sl_id: ' . $all_lessons[$i]->sl_id . "<input type='hidden' name='post_ids[]' value='". $all_lessons[$i]->ID ."'>";
-	echo "<input type='hidden' name='sl_ids[]' value='". NULL . "'>";
-	echo "<input type='hidden' name='section_ids[]' value='1'></div>";
-	//echo '<div class="dropzone" id="target" ondragleave="dragleave_handler(event);" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>';
-
-}
-//    TODO Create list of lesson ids to store in database as a "section"
-    // TODO Access & display these lessons via shortcode
-
+echo Jsc_Courses_Admin::add_all_position_fields();

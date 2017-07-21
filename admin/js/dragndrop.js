@@ -7,12 +7,12 @@ function dragstart_handler(ev){
     //ev.currentTarget.style.border = "dashed";
     ev.dataTransfer.setData("text", ev.target.id);
     var data = ev.dataTransfer.getData("text");
-    console.log("The data is: " + data);
+    //console.log("The data is: " + data);
 }
 
 function dragover_handler(ev) {
-    console.log("dragOver");
-    console.log(ev.target.id);
+    //console.log("dragOver");
+    //console.log(ev.target.id);
     // Change the target element's border to signify a drag over event
     // has occurred
     ev.currentTarget.style.background = "lightblue";
@@ -21,18 +21,18 @@ function dragover_handler(ev) {
 }
 
 function dragleave_handler(ev) {
-    console.log("dragLeave");
+    //console.log("dragLeave");
     // Change the source element's border back to white
     ev.currentTarget.style.background = "white";
 }
 
 function drop_handler(ev) {
-    console.log("target elem...");
+    //console.log("target elem...");
     var baseElement = document.getElementById(ev.target.id);
     ev.preventDefault();
     var parentDiv = baseElement.parentNode;
     var data = ev.dataTransfer.getData("text");
-    console.log(document.getElementById(data));
+    //console.log(document.getElementById(data));
     parentDiv.insertBefore(document.getElementById(data), baseElement);
     set_position();
 }
@@ -41,6 +41,6 @@ function set_position() {
     var lessons = document.getElementsByClassName('lesson_position');
     for (i = 0; i < lessons.length; i++) {
         lessons[i].value = i + 1;
-        console.log(lessons[i]);
+        //console.log(lessons[i]);
     }
 }
