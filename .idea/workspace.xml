@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e83161b4-e0f9-4589-b74c-320bc87281ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/sections.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/jsc-courses-form-action.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/solve_challenge_ajax.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" afterPath="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/dragndrop.js" afterPath="$PROJECT_DIR$/admin/js/dragndrop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/sections.js" afterPath="$PROJECT_DIR$/admin/js/sections.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/templates/courses-admin.php" afterPath="$PROJECT_DIR$/admin/templates/courses-admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-jsc-courses-dba.php" afterPath="$PROJECT_DIR$/includes/class-jsc-courses-dba.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-jsc-courses-shortcodes.php" afterPath="$PROJECT_DIR$/includes/class-jsc-courses-shortcodes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-jsc-courses.php" afterPath="$PROJECT_DIR$/includes/class-jsc-courses.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,45 +69,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="sections.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/js/sections.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-jsc-courses-admin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/class-jsc-courses-admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="245" column="22" lean-forward="false" selection-start-line="245" selection-start-column="22" selection-end-line="245" selection-end-column="22" />
-              <folding>
-                <marker date="1500658928000" expanded="true" signature="3055:3159" ph="INSERT INTO wp_prefixjsc_courses_sections_lessons... " />
-                <marker date="1500658928000" expanded="true" signature="4969:5476" ph="SELECT wp_po... wp_posts" />
-                <marker date="1500658928000" expanded="true" signature="5566:5907" ph="SELECT wp_po... wp_posts" />
-                <marker date="1500658928000" expanded="true" signature="7878:7931" ph="SELECT title... wp_jsc_courses_sections" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-jsc-courses.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="92" column="89" lean-forward="false" selection-start-line="92" selection-start-column="89" selection-end-line="92" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -123,23 +82,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>section</find>
-      <find>section_</find>
-      <find>section_id</find>
-      <find>ssection_id</find>
-      <find>sesection_id</find>
-      <find>secsection_id</find>
-      <find>sectsection_id</find>
-      <find>sectionsection_id</find>
-      <find>sectionssection_id</find>
-      <find>sections.section_id</find>
-      <find>sections.sectioid</find>
-      <find>sections.sectiid</find>
       <find>sections.sid</find>
       <find>sections.id</find>
-      <find>s</find>
       <find>solve</find>
-      <find>solve_</find>
       <find>solve_le</find>
       <find>solve_less</find>
       <find>solve_lesson</find>
@@ -153,6 +98,20 @@
       <find>&lt;form</find>
       <find>count</find>
       <find>echo</find>
+      <find>s</find>
+      <find>solve_</find>
+      <find>solve_chal</find>
+      <find>solve_chall</find>
+      <find>solve_challen</find>
+      <find>solve_challeng</find>
+      <find>solve_challenge</find>
+      <find>solve_challenge_</find>
+      <find>solve_challenge_s</find>
+      <find>solve_challenge_sc</find>
+      <find>solve_challenge_scr</find>
+      <find>solve_challenge_scri</find>
+      <find>solve_challenge_scrip</find>
+      <find>solve_challenge_script</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,7 +129,6 @@
         <option value="$PROJECT_DIR$/public/class-jsc-courses-public.php" />
         <option value="$PROJECT_DIR$/public/templates/single-lesson.php" />
         <option value="$PROJECT_DIR$/includes/class-jsc-courses-activator.php" />
-        <option value="$PROJECT_DIR$/includes/class-jsc-courses-loader.php" />
         <option value="$PROJECT_DIR$/public/css/jsc-courses-public.css" />
         <option value="$PROJECT_DIR$/admin/jsc-courses-form-action.php" />
         <option value="$PROJECT_DIR$/admin/css/jsc-courses-admin.css" />
@@ -178,10 +136,12 @@
         <option value="$PROJECT_DIR$/includes/class-jsc-courses-shortcodes.php" />
         <option value="$PROJECT_DIR$/includes/class-jsc-courses-dba.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5214b780-848b-412b-8aaa-c48b10ac5052/console.sql" />
-        <option value="$PROJECT_DIR$/admin/templates/courses-admin.php" />
         <option value="$PROJECT_DIR$/admin/js/dragndrop.js" />
         <option value="$PROJECT_DIR$/admin/js/sections.js" />
+        <option value="$PROJECT_DIR$/admin/templates/courses-admin.php" />
+        <option value="$PROJECT_DIR$/includes/class-jsc-courses-loader.php" />
         <option value="$PROJECT_DIR$/includes/class-jsc-courses.php" />
+        <option value="$PROJECT_DIR$/admin/js/solve_challenge_ajax.js" />
         <option value="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" />
       </list>
     </option>
@@ -451,12 +411,12 @@
       <workItem from="1500126252580" duration="8269000" />
       <workItem from="1500561908161" duration="1011000" />
       <workItem from="1500566708005" duration="11602000" />
-      <workItem from="1500658450968" duration="725000" />
+      <workItem from="1500658450968" duration="9459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109037000" />
+    <option name="totallyTimeSpent" value="117771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,12 +429,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="127" width="1260" height="669" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26026273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26026273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49220103" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -488,7 +448,6 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61095893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49220103" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -529,10 +488,10 @@
         <state relative-caret-position="1230">
           <caret line="82" column="36" lean-forward="false" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
           <folding>
-            <marker date="1500658928000" expanded="true" signature="3055:3159" ph="INSERT INTO wp_prefixjsc_courses_sections_lessons... " />
-            <marker date="1500658928000" expanded="true" signature="4969:5476" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500658928000" expanded="true" signature="5566:5907" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500658928000" expanded="true" signature="7878:7931" ph="SELECT title... wp_jsc_courses_sections" />
+            <marker date="1500671605000" expanded="true" signature="3312:3416" ph="INSERT INTO wp_prefixjsc_courses_sections_lessons... " />
+            <marker date="1500671605000" expanded="true" signature="5226:5733" ph="SELECT wp_po... wp_posts" />
+            <marker date="1500671605000" expanded="true" signature="5823:6164" ph="SELECT wp_po... wp_posts" />
+            <marker date="1500671605000" expanded="true" signature="8135:8188" ph="SELECT title... wp_jsc_courses_sections" />
           </folding>
         </state>
       </provider>
@@ -597,6 +556,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,6 +601,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="24" column="5" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,14 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses-loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -727,51 +680,71 @@
         <state relative-caret-position="546">
           <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
-            <marker date="1500577006000" expanded="true" signature="520:710" ph="CREATE TABLE... ${$table_name}" />
-            <marker date="1500577006000" expanded="true" signature="1268:1655" ph="SELECT wp_js... wp_posts" />
-            <marker date="1500577006000" expanded="true" signature="1268:1659" ph="SELECT wp_js... wp_posts" />
-            <marker date="1500577006000" expanded="true" signature="1268:1674" ph="SELECT wp_js... wp_posts" />
-            <marker date="1500577006000" expanded="true" signature="1268:1727" ph="SELECT wp_js... wp_posts" />
-            <marker date="1500577006000" expanded="true" signature="1268:1728" ph="SELECT wp_js... wp_posts" />
+            <marker date="1500659403000" expanded="true" signature="520:710" ph="CREATE TABLE... ${$table_name}" />
+            <marker date="1500659403000" expanded="true" signature="1268:1655" ph="SELECT wp_js... wp_posts" />
+            <marker date="1500659403000" expanded="true" signature="1268:1659" ph="SELECT wp_js... wp_posts" />
+            <marker date="1500659403000" expanded="true" signature="1268:1674" ph="SELECT wp_js... wp_posts" />
+            <marker date="1500659403000" expanded="true" signature="1268:1727" ph="SELECT wp_js... wp_posts" />
+            <marker date="1500659403000" expanded="true" signature="1268:1728" ph="SELECT wp_js... wp_posts" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/templates/courses-admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="92" column="89" lean-forward="false" selection-start-line="92" selection-start-column="89" selection-end-line="92" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/js/sections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/courses-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="92" lean-forward="false" selection-start-line="27" selection-start-column="92" selection-end-line="27" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses-loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="79" column="59" lean-forward="false" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="93" column="85" lean-forward="false" selection-start-line="93" selection-start-column="85" selection-end-line="93" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/class-jsc-courses-admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="245" column="22" lean-forward="false" selection-start-line="245" selection-start-column="22" selection-end-line="245" selection-end-column="22" />
+        <state relative-caret-position="228">
+          <caret line="62" column="79" lean-forward="false" selection-start-line="62" selection-start-column="79" selection-end-line="62" selection-end-column="79" />
           <folding>
-            <marker date="1500658928000" expanded="true" signature="3055:3159" ph="INSERT INTO wp_prefixjsc_courses_sections_lessons... " />
-            <marker date="1500658928000" expanded="true" signature="4969:5476" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500658928000" expanded="true" signature="5566:5907" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500658928000" expanded="true" signature="7878:7931" ph="SELECT title... wp_jsc_courses_sections" />
+            <marker date="1500671605000" expanded="true" signature="3312:3416" ph="INSERT INTO wp_prefixjsc_courses_sections_lessons... " />
+            <marker date="1500671605000" expanded="true" signature="5226:5733" ph="SELECT wp_po... wp_posts" />
+            <marker date="1500671605000" expanded="true" signature="5823:6164" ph="SELECT wp_po... wp_posts" />
+            <marker date="1500671605000" expanded="true" signature="8135:8188" ph="SELECT title... wp_jsc_courses_sections" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/solve_challenge_ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc;n#submit_me#0" expanded="false" />
+            <marker date="1500671510000" expanded="true" signature="258:279" ph="..." />
+            <marker date="1500671510000" expanded="true" signature="552:558" ph=" " />
           </folding>
         </state>
       </provider>

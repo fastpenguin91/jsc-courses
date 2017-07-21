@@ -52,11 +52,15 @@ class Jsc_Courses_Admin {
 		wp_enqueue_script( 'jsc-courses-sections-handle', plugin_dir_url( __FILE__ ) . 'js/dragndrop.js', array( 'jquery' ) );
 		wp_localize_script( 'jsc-courses-sections-handle', 'dragDropData', array() );
 
-		wp_enqueue_script( 'ajax-script', plugin_dir_url(__FILE__ ) . 'js/sections.js', array( 'jquery' ) );
+		//wp_enqueue_script( 'ajax-script', plugin_dir_url(__FILE__ ) . 'js/sections.js', array( 'jquery' ) );
 
 		// in JavaScript, object properties are accessed as ajax_object.ajax_url, ajax_object.we_value
+		//wp_localize_script( 'ajax-script', 'ajax_object',
+		//	array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'we_value' => 1234 ) );
+
+		wp_enqueue_script( 'ajax-script', plugin_dir_url( __FILE__ ) . 'js/solve_challenge_ajax.js', array( 'jquery' ) );
 		wp_localize_script( 'ajax-script', 'ajax_object',
-			array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'we_value' => 1234 ) );
+			array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'we_value' => '11111' ) );
 	}
 
 	public function jsc_create_section() {
@@ -234,18 +238,31 @@ WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 2");
 		$html = '';
 
 		for ($i = 0; $i < count($sections); $i++) {
-			$html .= "<div class='admin-lesson'>" . $sections[$i]->title . "</div>";
+			$html .= "<button onclick='change_section();' class='admin-lesson'>" . $sections[$i]->title . "</button>";
 		}
 
 		return $html;
 	}
 
-	public function my_action() {
+	/*public function select_section() {
 		global $wpdb;
 		$whatever = intval( $_POST['whatever'] );
 		$whatever += 50;
 		echo $whatever;
 		wp_die();
+	}*/
+
+	public function my_action(){
+		//die();
+		global $wpdb; // this is how you get access to the database
+
+		$whatever = "I am a cat";//$_POST['whatever'];
+
+		//$whatever += 'This is added by the server. solve_challenge_function';
+
+		echo $whatever;
+
+		wp_die(); // this is required to terminate immediately and return a proper response
 	}
 
 
