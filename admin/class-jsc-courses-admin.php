@@ -175,14 +175,14 @@ class Jsc_Courses_Admin {
 	}
 
 
-	public function get_section_lessons(){
+	public function get_section_lessons($section_id){
 		global $wpdb;
 
 		return $wpdb->get_results("SELECT wp_posts.ID, wp_posts.post_title, wp_jsc_courses_sections.section_id, wp_jsc_courses_sections_lessons.position, wp_jsc_courses_sections_lessons.sl_id
 FROM wp_posts
 INNER JOIN wp_jsc_courses_sections_lessons ON wp_posts.ID=wp_jsc_courses_sections_lessons.lessons_id
 INNER JOIN wp_jsc_courses_sections ON wp_jsc_courses_sections_lessons.sections_id=wp_jsc_courses_sections.section_id
-WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 1
+WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id =" . $section_id . "
 ORDER BY wp_jsc_courses_sections_lessons.position");
 	}
 
@@ -197,8 +197,8 @@ WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 2");
 
 	}
 
-	public function add_position_fields(){
-		$section_lessons = self::get_section_lessons();
+	public function add_position_fields($section_lessons, $section_id){
+		//$section_lessons = self::get_section_lessons(1);
 		$html = '';
 
 		for ($i = 0; $i < count($section_lessons); $i++) {
@@ -206,7 +206,7 @@ WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 2");
 			$html .= "<input class='lesson_position' type='number' name='lesson_positions[]' value='". $section_lessons[$i]->position . "' >";
 			$html .= 'post_id: ' . $section_lessons[$i]->ID . ' sl_id: ' . $section_lessons[$i]->sl_id . "<input type='hidden' name='post_ids[]' value='". $section_lessons[$i]->ID ."'>";
 			$html .= "<input type='hidden' name='sl_ids[]' value='". $section_lessons[$i]->sl_id . "'>";
-			$html .= "<input type='hidden' name='section_ids[]' value='1'></div>";
+			$html .= "<input type='hidden' name='section_ids[]' value='" . $section_id . "'></div>";
 		}
 
 		return $html;
@@ -238,7 +238,7 @@ WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 2");
 		$html = '';
 
 		for ($i = 0; $i < count($sections); $i++) {
-			$html .= "<button onclick='change_section();' class='admin-lesson'>" . $sections[$i]->title . "</button>";
+			$html .= "<div onclick='submit_me(". $sections[$i]->section_id . ");' class='admin-lesson'>" . $sections[$i]->title . "</div>";
 		}
 
 		return $html;
@@ -253,14 +253,18 @@ WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 2");
 	}*/
 
 	public function my_action(){
-		//die();
 		global $wpdb; // this is how you get access to the database
 
-		$whatever = "I am a cat";//$_POST['whatever'];
+		$whatever = $_POST['whatever'];
 
-		//$whatever += 'This is added by the server. solve_challenge_function';
+		$lessons_array = self::get_section_lessons($whatever);
 
-		echo $whatever;
+		$sql_string = self::add_position_fields($lessons_array, $whatever);
+
+		//create sql string of all lessons with section_id of $_POST
+
+
+		echo $sql_string;
 
 		wp_die(); // this is required to terminate immediately and return a proper response
 	}

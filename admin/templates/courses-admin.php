@@ -22,18 +22,18 @@
 
     <h3>Select a Lesson to Edit:</h3>
 
-    <form id="theForm">
-        <input type="hidden" name="challenge_id" value="149">
+    <!--<form id="theForm">-->
+        <!--<input type="hidden" name="challenge_id" value="149">-->
         <!-- this puts the action solve_challenge_ajax_hook into the serialized form -->
         <!--<input name="action" type="hidden" value="solve_challenge_ajax_hook" />&nbsp;-->
-        <input id="submit_button" value="Solve Challenge" type="button" onClick="submit_me(3, 149);" />
-    </form>
+        <!--<div class="admin-lesson" onClick="submit_me(3, 149);">This is a div that will call ajax</div>-->
+    <!--</form>-->
 
 <div id="lessonsGoHere">Test area</div>
 
     <!--<form id="selectSectionForm">-->
 
-    <?php //echo Jsc_Courses_Admin::display_all_sections(); ?>
+    <?php echo Jsc_Courses_Admin::display_all_sections(); ?>
 
   <!--  </form> -->
 
@@ -44,9 +44,9 @@
 <form action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post" id="sectionForm">
 <input type='hidden' name='action' value='update_lesson_position'>
 <input type="submit" value="submit">
-<?php
-
-echo Jsc_Courses_Admin::add_position_fields();
+    <div id="section_lessons"></div>
+    <?php
+//echo Jsc_Courses_Admin::add_position_fields();
 
 ?>
 
