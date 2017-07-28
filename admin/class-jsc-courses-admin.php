@@ -52,12 +52,6 @@ class Jsc_Courses_Admin {
 		wp_enqueue_script( 'jsc-courses-sections-handle', plugin_dir_url( __FILE__ ) . 'js/dragndrop.js', array( 'jquery' ) );
 		wp_localize_script( 'jsc-courses-sections-handle', 'dragDropData', array() );
 
-		//wp_enqueue_script( 'ajax-script', plugin_dir_url(__FILE__ ) . 'js/sections.js', array( 'jquery' ) );
-
-		// in JavaScript, object properties are accessed as ajax_object.ajax_url, ajax_object.we_value
-		//wp_localize_script( 'ajax-script', 'ajax_object',
-		//	array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'we_value' => 1234 ) );
-
 		wp_enqueue_script( 'ajax-script', plugin_dir_url( __FILE__ ) . 'js/solve_challenge_ajax.js', array( 'jquery' ) );
 		wp_localize_script( 'ajax-script', 'ajax_object',
 			array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'we_value' => '11111' ) );
@@ -238,33 +232,28 @@ WHERE post_type='lessons' AND wp_jsc_courses_sections.section_id = 2");
 		$html = '';
 
 		for ($i = 0; $i < count($sections); $i++) {
-			$html .= "<div onclick='submit_me(". $sections[$i]->section_id . ");' class='admin-lesson'>" . $sections[$i]->title . "</div>";
+			$html .= "<div onclick='select_section(". $sections[$i]->section_id . ");' class='admin-lesson'>" . $sections[$i]->title . "</div>";
 		}
 
 		return $html;
 	}
 
-	/*public function select_section() {
-		global $wpdb;
-		$whatever = intval( $_POST['whatever'] );
-		$whatever += 50;
-		echo $whatever;
-		wp_die();
-	}*/
 
-	public function my_action(){
+	public function prepare_section_lessons_html(){ //was my_action
 		global $wpdb; // this is how you get access to the database
 
+		//Takes the section_id
 		$whatever = $_POST['whatever'];
 
+		//creates an array of all the lessons in that section
 		$lessons_array = self::get_section_lessons($whatever);
 
-		$sql_string = self::add_position_fields($lessons_array, $whatever);
+		//turns the lessons into an HTML string
+		$section_lessons_html = self::add_position_fields($lessons_array, $whatever);
 
-		//create sql string of all lessons with section_id of $_POST
 
-
-		echo $sql_string;
+		// sends string of all lessons to be placed in the section
+		echo $section_lessons_html;
 
 		wp_die(); // this is required to terminate immediately and return a proper response
 	}

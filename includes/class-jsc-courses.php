@@ -90,8 +90,7 @@ class Jsc_Courses {
 		$this->loader->add_action( 'admin_enqueue_scripts', $jsc_courses_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'init', $jsc_courses_admin, 'create_lesson' );
 		$this->loader->add_action( 'admin_menu', $jsc_courses_admin, 'add_menu' );
-		//$this->loader->add_action( 'wp_ajax_select_section', $jsc_courses_admin, 'select_section');
-		$this->loader->add_action('wp_ajax_my_action', $jsc_courses_admin, 'my_action' );
+		$this->loader->add_action('wp_ajax_prepare_section_lessons_html', $jsc_courses_admin, 'prepare_section_lessons_html' );
 //die('this function is called before the admin page is rendered');
 		$courses_shortcodes = new Jsc_Courses_Shortcodes();
 

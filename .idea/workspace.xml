@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e83161b4-e0f9-4589-b74c-320bc87281ad" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/sections.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" afterPath="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/solve_challenge_ajax.js" afterPath="$PROJECT_DIR$/admin/js/solve_challenge_ajax.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/templates/courses-admin.php" afterPath="$PROJECT_DIR$/admin/templates/courses-admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/class-jsc-courses.php" afterPath="$PROJECT_DIR$/includes/class-jsc-courses.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +69,20 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="solve_challenge_ajax.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/js/solve_challenge_ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+              <folding>
+                <element signature="n#!!doc;n#select_section#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,21 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>solve</find>
-      <find>solve_le</find>
-      <find>solve_less</find>
-      <find>solve_lesson</find>
-      <find>solve_lesson_</find>
-      <find>solve_lesson_s</find>
-      <find>solve_lesson_sc</find>
-      <find>solve_lesson_scri</find>
-      <find>solve_lesson_scrip</find>
-      <find>solve_lesson_script</find>
-      <find>ajax</find>
-      <find>&lt;form</find>
-      <find>count</find>
-      <find>echo</find>
-      <find>s</find>
       <find>solve_</find>
       <find>solve_chal</find>
       <find>solve_chall</find>
@@ -110,6 +110,21 @@
       <find>solve_challenge_script</find>
       <find>sections</find>
       <find>get_section_less</find>
+      <find>submi</find>
+      <find>my_actio</find>
+      <find>my_acti</find>
+      <find>s</find>
+      <find>submit</find>
+      <find>submit_</find>
+      <find>submit_m</find>
+      <find>formStr</find>
+      <find>submit_me</find>
+      <find>add_position</find>
+      <find>m</find>
+      <find>my_a</find>
+      <find>my_ac</find>
+      <find>my_act</find>
+      <find>my_action</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,12 +150,12 @@
         <option value="$PROJECT_DIR$/includes/class-jsc-courses-dba.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5214b780-848b-412b-8aaa-c48b10ac5052/console.sql" />
         <option value="$PROJECT_DIR$/admin/js/dragndrop.js" />
-        <option value="$PROJECT_DIR$/admin/js/sections.js" />
         <option value="$PROJECT_DIR$/includes/class-jsc-courses-loader.php" />
-        <option value="$PROJECT_DIR$/includes/class-jsc-courses.php" />
-        <option value="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" />
+        <option value="$PROJECT_DIR$/admin/js/sections.js" />
         <option value="$PROJECT_DIR$/admin/templates/courses-admin.php" />
+        <option value="$PROJECT_DIR$/admin/class-jsc-courses-admin.php" />
         <option value="$PROJECT_DIR$/admin/js/solve_challenge_ajax.js" />
+        <option value="$PROJECT_DIR$/includes/class-jsc-courses.php" />
       </list>
     </option>
   </component>
@@ -198,6 +213,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jsc-courses" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsc-courses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsc-courses" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsc-courses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsc-courses" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,12 +456,12 @@
       <workItem from="1500126252580" duration="8269000" />
       <workItem from="1500561908161" duration="1011000" />
       <workItem from="1500566708005" duration="11602000" />
-      <workItem from="1500658450968" duration="13084000" />
+      <workItem from="1500658450968" duration="14849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121396000" />
+    <option name="totallyTimeSpent" value="123161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,8 +474,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="62" width="1260" height="669" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26026273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26026273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -485,13 +533,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="82" column="36" lean-forward="false" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-          <folding>
-            <marker date="1500681365000" expanded="true" signature="3312:3416" ph="INSERT INTO wp_prefixjsc_courses_sections_lessons... " />
-            <marker date="1500681365000" expanded="true" signature="5237:5692" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500681365000" expanded="true" signature="5237:5761" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500681365000" expanded="true" signature="5851:6192" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500681365000" expanded="true" signature="8213:8266" ph="SELECT title... wp_jsc_courses_sections" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -499,9 +541,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1498969428000" expanded="true" signature="575:640" ph="SELECT * FRO... ${$db_name}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -516,9 +556,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1498969428000" expanded="true" signature="575:640" ph="SELECT * FRO... ${$db_name}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -563,9 +601,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <marker date="1498969428000" expanded="true" signature="575:640" ph="SELECT * FRO... ${$db_name}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -690,16 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/sections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses-loader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -708,42 +734,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses.php">
+    <entry file="file://$PROJECT_DIR$/admin/js/sections.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="93" column="85" lean-forward="false" selection-start-line="93" selection-start-column="85" selection-end-line="93" selection-end-column="85" />
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/solve_challenge_ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-          <folding>
-            <element signature="n#!!doc;n#submit_me#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/templates/courses-admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/class-jsc-courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="92" column="123" lean-forward="false" selection-start-line="92" selection-start-column="123" selection-end-line="92" selection-end-column="123" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/class-jsc-courses-admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="261" column="75" lean-forward="false" selection-start-line="261" selection-start-column="75" selection-end-line="261" selection-end-column="75" />
+        <state relative-caret-position="126">
+          <caret line="241" column="35" lean-forward="true" selection-start-line="241" selection-start-column="35" selection-end-line="241" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/solve_challenge_ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
           <folding>
-            <marker date="1500681365000" expanded="true" signature="3312:3416" ph="INSERT INTO wp_prefixjsc_courses_sections_lessons... " />
-            <marker date="1500681365000" expanded="true" signature="5237:5692" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500681365000" expanded="true" signature="5237:5761" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500681365000" expanded="true" signature="5851:6192" ph="SELECT wp_po... wp_posts" />
-            <marker date="1500681365000" expanded="true" signature="8213:8266" ph="SELECT title... wp_jsc_courses_sections" />
+            <element signature="n#!!doc;n#select_section#0" expanded="false" />
           </folding>
         </state>
       </provider>

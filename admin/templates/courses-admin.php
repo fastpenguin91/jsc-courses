@@ -22,13 +22,6 @@
 
     <h3>Select a Lesson to Edit:</h3>
 
-    <!--<form id="theForm">-->
-        <!--<input type="hidden" name="challenge_id" value="149">-->
-        <!-- this puts the action solve_challenge_ajax_hook into the serialized form -->
-        <!--<input name="action" type="hidden" value="solve_challenge_ajax_hook" />&nbsp;-->
-        <!--<div class="admin-lesson" onClick="submit_me(3, 149);">This is a div that will call ajax</div>-->
-    <!--</form>-->
-
 <div id="lessonsGoHere">Test area</div>
 
     <!--<form id="selectSectionForm">-->
